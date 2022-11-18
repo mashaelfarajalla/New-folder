@@ -1,0 +1,180 @@
+    /* Container1 Start*/
+
+    .bg {
+        background: url(./../image/Group.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .height-100 {
+        height: calc(76vh);
+    }
+
+    div.container-fluid {
+        margin-top: 19vh;
+        width: 92%;
+        margin-left: 0px;
+
+    }
+
+    .container-fluid div .carousel-caption span svg path {
+        fill: white;
+    }
+
+    .col-4 {
+        margin-top: 15px;
+    }
+
+    .padding {
+        padding: 15px 23px 0 0;
+    }
+
+    div.carousel-caption {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        text-align: right;
+        background: #12100e78;
+        z-index: 1;
+        /* padding: 119px 46px 55px 158px; */
+        /* padding: 18vh 4vh 0vh 15vh; */
+        bottom: 0rem;
+        left: 0%;
+        padding: 84px 30px 0 64px;
+    }
+
+    .container-fluid div .carousel-caption p {
+        font-family: FFShamelFamily-SansOneBook;
+        font-size: 18px;
+        color: white;
+    }
+
+    .container-fluid div .carousel-caption span {
+        font-family: FFShamelFamily-SansOneBook;
+        font-size: 14px;
+        display: block;
+        color: white;
+    }
+
+    div.carousel-indicators {
+        bottom: -60px;
+    }
+
+    div.carousel-dark .carousel-indicators [data-bs-target] {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #392C23;
+        opacity: 1;
+
+    }
+
+    div.carousel-dark .carousel-indicators .active {
+        background-color: white;
+        border: 1px solid #392C23;
+        margin: auto 1px;
+    }
+
+    .line {
+        height: 45px;
+        width: 3px;
+        background: #ffffff;
+    }
+
+    .divmag {
+        margin-right: -9px;
+    }
+
+    div h3 {
+        color: #CF2A45;
+        font-family: 'FFShamelFamily-SansOneBold';
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    div span a {
+        text-decoration: none;
+        color: #848484;
+        font-size: 14px;
+        font-family: 'FFShamelFamily-SansOneBook';
+    }
+
+    .Ddiv {
+        /* padding: 28px 35px 37px 0; */
+        /* padding: 0% 3% 2% 6%; */
+        padding: 0vh 3vh 2vh 3vh;
+        background: white;
+    }
+
+    .round {
+        border-radius: 1.25rem !important;
+    }
+
+    .Ddiv p {
+        font-size: 16px;
+        color: #392C23;
+        padding: 3vh 3vh 2vh 0vh;
+        /* padding: 6% 5% 6% 0%; */
+        /* padding: 7px 0 17px 109px; */
+
+    }
+
+    .justify-content-between {
+        padding: 0 17px 0 30px;
+    }
+
+    .Ddiv span {
+        color: #CF2A45;
+        font-size: 12px;
+    }
+
+    .Ddiv span a {
+        text-decoration: none;
+        color: #392C23;
+        font-size: 10px;
+    }
+
+    iframe {
+        width: 95%;
+        max-height: 305px;
+        margin-top: 4vh;
+        /* border-radius: 5%; */
+
+    }
+
+    /* Container1 End*/
+
+
+    /* Container2 Start*/
+    .section {
+        padding: 62px;
+    }
+
+    .section .h4 {
+        padding: 18px;
+        font-family: 'FFShamelFamily-SansOneBold';
+        font-size: 20px;
+        color: #CF2A45;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .circle {
+        height: 50px;
+        width: 50px;
+        background-color: #3EC4B5;
+        border-radius: 50%;
+    }
+
+    .col-1 svg {
+        margin: 12px;
+    }
+
+    .divmagright p {
+        margin-right: 4vh;
+    }
+
+    /* Container2 End*/
