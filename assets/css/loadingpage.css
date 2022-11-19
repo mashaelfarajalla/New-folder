@@ -14,7 +14,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    animation: ring .9s linear infinite;
+    animation: ring 2s linear infinite;
 }
 
 @keyframes ring {
@@ -59,4 +59,8 @@
     50% {
         color: white;
     }
+}
+
+.index {
+    z-index: -1;
 }

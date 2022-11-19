@@ -10,7 +10,7 @@
     height: calc(76vh);
 }
 
-.container-fluid {
+div.container-fluid {
     margin-top: 19vh;
     width: 92%;
     margin-left: 0px;

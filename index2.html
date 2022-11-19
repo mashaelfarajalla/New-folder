@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/loadingpage.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/index2.css">
+    <link rel="stylesheet" href="assets/css/loadingpage.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -70,7 +68,7 @@
     <div id="body-pd">
 
         <!--Header  start-->
-        <header class="Container header" id="header">
+        <header class="Container header index" id="header">
             <div class="header_toggle">
                 <div class="div">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.947" height="20" viewBox="0 0 18.947 20">
@@ -145,7 +143,7 @@
         <!--Header  end-->
 
         <!--NavBar  start-->
-        <div class="l-navbar" id="nav-bar">
+        <div class="l-navbar index" id="nav-bar">
             <nav class="nav">
                 <div>
                     <div class="nav_list">
@@ -159,7 +157,7 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="index2.html" class="nav_link active">
+                        <a href="index2.html" class="nav_link  active">
                             <span class="nav_name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15.282" height="22.074"
                                     viewBox="0 0 15.282 22.074">
@@ -227,11 +225,24 @@
         <!--NavBar  end-->
 
         <!--links  start-->
-        <div class="fot">
+        <div class="fot index">
+            <div style="position: fixed;left: 38px;bottom: 34px;margin-right: 2.5rem;margin-bottom: 3rem; ">
+                <a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                        <g id="messanger" transform="translate(-64 -850)">
+                            <circle id="Ellipse_102" data-name="Ellipse 102" cx="36" cy="36" r="36"
+                                transform="translate(64 850)" fill="#3ec4b5" />
+                            <path id="icons8_facebook_messenger"
+                                d="M16.291,1C7.892,1,1,7.543,1,15.648A13.445,13.445,0,0,0,5.7,26.069V32.6l5.881-3.924a29.241,29.241,0,0,0,4.7.551,16.529,16.529,0,0,0,10.742-3.694,12.785,12.785,0,0,0,4.549-9.888C31.582,7.543,24.69,1,16.291,1Zm0,2.352c7.186,0,12.939,5.523,12.939,12.3a10.306,10.306,0,0,1-3.722,8.1,14.19,14.19,0,0,1-9.217,3.134,33.463,33.463,0,0,1-4.834-.579l-.441-.055L8.057,28.21V25.131l-.441-.349a10.908,10.908,0,0,1-4.264-9.134C3.352,8.875,9.105,3.352,16.291,3.352Zm-3.529,9.41L5.7,19.82l7.057-2.352L19.82,19.82l7.057-7.057L19.82,15.115Z"
+                                transform="translate(84 870)" fill="#fff" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
             <nav class="fotnav">
                 <div>
                     <div class="fotdiv">
-                        <a href="#" class="fotlink">
+                        <a href="index5.html" class="fotlink">
 
                             البلدية
 
@@ -254,6 +265,10 @@
                         </a>
                     </div>
                 </div>
+
+
+
+
             </nav>
         </div>
         <!--links  start-->
@@ -428,9 +443,19 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script>
+        // var loader = document.getElementById('loader');
+        // function myFunction2() {
+        //     loader.style.display = 'none';
+        // }
+
         var loader = document.getElementById('loader');
         function myFunction() {
-            loader.style.display = 'none';
+            setInterval(function () {
+                loader.style.display = 'none';
+                $('.header').removeClass('index');
+                $('.l-navbar').removeClass('index');
+                $('.fot').removeClass('index');
+            }, 1000);
         }
     </script>
 

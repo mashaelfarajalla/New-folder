@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/nav.css">
 
     <link rel="stylesheet" href="assets/css/index5.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/hover.css">
@@ -16,14 +17,40 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            /*===== LINK ACTIVE =====*/
+            const linkColor = document.querySelectorAll('.fotlink')
+
+            function colorLink() {
+                if (linkColor) {
+                    linkColor.forEach(l => l.classList.remove('active'))
+                    this.classList.add('active')
+                }
+            }
+            linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+            // Your code to run since DOM is loaded and ready
+        });
+
+    </script>
+
+
 </head>
 
-<body>
+<body onload="myFunction()">
+
+    <div id="div" data-aos="fade-left">
+    </div>
 
     <div id="body-pd">
 
         <!--Header  start-->
-        <header class="Container header" id="header">
+        <header class="Container header index" id="header">
             <div class="header_toggle">
                 <div class="div">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.947" height="20" viewBox="0 0 18.947 20">
@@ -98,11 +125,11 @@
         <!--Header  end-->
 
         <!--NavBar  start-->
-        <div class="l-navbar" id="nav-bar">
+        <div class="l-navbar " id="nav-bar">
             <nav class="nav">
                 <div>
                     <div class="nav_list">
-                        <a href="index.html" class="nav_link active">
+                        <a href="#" class="nav_link">
                             <span class="nav_name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
                                     viewBox="0 0 21.879 21.879">
@@ -113,7 +140,7 @@
 
                             </span>
                         </a>
-                        <a href="index2.html" class="nav_link ">
+                        <a href="#" class="nav_link ">
                             <span class="nav_name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
                                     viewBox="0 0 21.879 21.879">
@@ -124,7 +151,7 @@
 
                             </span>
                         </a>
-                        <a href="index3.html" class="nav_link">
+                        <a href="#" class="nav_link">
                             <span class="nav_name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
                                     viewBox="0 0 21.879 21.879">
@@ -180,7 +207,7 @@
 
                             </span>
                         </a>
-                        <a href="#" class="nav_link">
+                        <a href="index5.html" class="nav_link active">
                             <span class="nav_name">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <g id="svgexport-6_47_" data-name="svgexport-6 (47)" transform="translate(-2 -2)">
@@ -200,12 +227,14 @@
         </div>
         <!--NavBar  end-->
 
+
+
         <!--links  start-->
-        <div class="fot">
+        <div class="fot ">
             <nav class="fotnav">
                 <div>
                     <div class="fotdiv">
-                        <a href="#" class="fotlink">
+                        <a href="index5.html" class="fotlink active">
 
                             البلدية
 
@@ -273,17 +302,17 @@
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="assets/image/atrafplace-1092x614.png">
+                    <img src="assets/image/0mlr1.png">
                     <div class="divabsolute">
-                        <img src="assets/image/الاطراف الصناعية.png">
+                        <img src="assets/image/Group 62517.png">
                     </div>
 
                     <div class="card-body mt-5">
-                        <h5>مركز الأطراف الصناعية</h5>
+                        <h5>ملعب اليرموك غزة</h5>
                         <p class="card-text">
-                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
-                            الاعاقات الناتجة عن الحروب
-                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
+                            ،يعتبر ملعب اليرموك أحد أكبر الملاعب على مستوى قطاع غزة
+                            حيث تتخذه عدد من الفرق المحلية كملعب رئيسي لخوض مبارياتها
+                            ...في الدوري المحلي. إلى جانب دوره الرياضي، يستغل الغزيون
                         </p>
                         <div class=" align-items-center">
 
@@ -301,102 +330,17 @@
             </div>
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="assets/image/atrafplace-1092x614.png">
+                    <img src="assets/image/es3adimg1.png">
                     <div class="divabsolute">
-                        <img src="assets/image/الاطراف الصناعية.png">
+                        <img src="assets/image/Group 6.png">
                     </div>
 
                     <div class="card-body mt-5">
-                        <h5>مركز الأطراف الصناعية</h5>
+                        <h5>مركز حديقة إسعاد الطفولة</h5>
                         <p class="card-text">
-                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
-                            الاعاقات الناتجة عن الحروب
-                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
-                        </p>
-                        <div class=" align-items-center">
-
-                            <small class="text-muted">عرض التفاصيل</small>
-                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
-                                    viewBox="0 0 14 8.996">
-                                    <path id="Path_382" data-name="Path 382"
-                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
-                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/image/atrafplace-1092x614.png">
-                    <div class="divabsolute">
-                        <img src="assets/image/الاطراف الصناعية.png">
-                    </div>
-
-                    <div class="card-body mt-5">
-                        <h5>مركز الأطراف الصناعية</h5>
-                        <p class="card-text">
-                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
-                            الاعاقات الناتجة عن الحروب
-                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
-                        </p>
-                        <div class=" align-items-center">
-
-                            <small class="text-muted">عرض التفاصيل</small>
-                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
-                                    viewBox="0 0 14 8.996">
-                                    <path id="Path_382" data-name="Path 382"
-                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
-                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/image/atrafplace-1092x614.png">
-                    <div class="divabsolute">
-                        <img src="assets/image/الاطراف الصناعية.png">
-                    </div>
-
-                    <div class="card-body mt-5">
-                        <h5>مركز الأطراف الصناعية</h5>
-                        <p class="card-text">
-                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
-                            الاعاقات الناتجة عن الحروب
-                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
-                        </p>
-                        <div class=" align-items-center">
-
-                            <small class="text-muted">عرض التفاصيل</small>
-                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
-                                    viewBox="0 0 14 8.996">
-                                    <path id="Path_382" data-name="Path 382"
-                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
-                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/image/atrafplace-1092x614.png">
-                    <div class="divabsolute">
-                        <img src="assets/image/الاطراف الصناعية.png">
-                    </div>
-
-                    <div class="card-body mt-5">
-                        <h5>مركز الأطراف الصناعية</h5>
-                        <p class="card-text">
-                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
-                            الاعاقات الناتجة عن الحروب
-                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
+                            إن مركز حديقة إسعاد الطفولة هو ثمرة لسلسلة من الجهود
+                            والاجتماعات واللقاءات وورشات العمل بين بلدية غزة ومؤسسة
+                            ...التعاون والعديد من المؤسسات الاجتماعية ذات الاهتمام
                         </p>
                         <div class=" align-items-center">
 
@@ -415,17 +359,102 @@
 
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="assets/image/atrafplace-1092x614.png">
+                    <img src="assets/image/99D6zZ84uyz2TYKyWApn9Gd94RbnRtbBRyvHoINe.png">
                     <div class="divabsolute">
-                        <img src="assets/image/الاطراف الصناعية.png">
+                        <img src="assets/image/Group 625.png">
                     </div>
 
                     <div class="card-body mt-5">
-                        <h5>مركز الأطراف الصناعية</h5>
+                        <h5>مكتبة بلدية غزة العامة</h5>
                         <p class="card-text">
-                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
-                            الاعاقات الناتجة عن الحروب
-                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
+                            تهدف المكتبة العامة الى المساعدة على الاستمرار في عملية
+                            التثقيف والتعليم الذاتي للمستفيدين دون حواجز، وتوفير مصادر
+                            ...المعلومات التي تلبي احتياجات المستفيدين واهتماماتهم
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/fonoonTopHead.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 6251.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>قرية الفنون والحرف </h5>
+                        <p class="card-text">
+                            تم تأسيس القرية عام 1998م، حيث تم تنفيذها بتمويل من برنامج
+                            ، وقام بالتنفيذ والإشراف المجلس (UNDP)الأمم المتحدة الإنمائي
+                            ...الاقتصادي الفلسطيني للتنمية والإعمار "بكـدار"، ضمن برنامج
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/rashadBG1.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 625173.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مركز رشاد الشوا الثقافي</h5>
+                        <p class="card-text">
+                            يعتبر مركز رشاد الشوا الثقافي في مدينة غزه أول مركز ثقافي يبني
+                            في فلسطين, و قد تم إتمام الـعمل في المبني عام 1988م, هذا
+                            ...وبعد مرور عشرة سـنوات مـنذ البدء في البــناء وذلـك نتيجة
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/holest1.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 62.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مركز هولست الثقافي</h5>
+                        <p class="card-text">
+                            يعمل مركز هولست الثقافي على رفع المستوى الثقافي والتعليمي
+                            والاجتماعي والصحي لأفراد المجتمع من أجل تحقيق التنمية في
+                            ...مختلف المجالات ، واستثمار الطاقات المتاحة ، وفي مقدمتها
                         </p>
                         <div class=" align-items-center">
 
@@ -453,6 +482,20 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
+
+<script>
+    AOS.init();
+
+    var loader = document.getElementById('div');
+    function myFunction() {
+        setInterval(function () {
+            loader.style.display = 'none';
+            $('.header').removeClass('index');
+        }, 1000);
+    }
+</script>
 
 </html>

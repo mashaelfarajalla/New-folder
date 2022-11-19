@@ -8,6 +8,8 @@
     src: url(./../fonts/ArbFONTS-FFShamelFamily-SansOneBook.ttf);
 }
 
+
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -60,8 +62,8 @@ a {
     justify-content: space-between;
     padding: 0 1rem;
     background: linear-gradient(to bottom, #F1F1F1 0%, #F8F8F8 100%);
-    /* z-index: var(--z-fixed); */
-    z-index: -1;
+    z-index: var(--z-fixed);
+
     transition: .5s;
 }
 
@@ -146,8 +148,7 @@ hr {
     background-color: #FAFAFA;
     padding: .5rem 1rem 0 0;
     transition: .5s;
-    /* z-index: var(--z-fixed) */
-    z-index: -1;
+    z-index: var(--z-fixed)
 }
 
 .nav {
@@ -260,18 +261,18 @@ p .span {
     position: fixed;
     bottom: 0;
     left: -8%;
-    height: 5vh;
+    height: 7vh;
     width: 100%;
     background-color: #FFFFFF;
     padding: 0rem 0rem 0 0;
     transition: .5s;
-    /* z-index: var(--z-fixed); */
-    z-index: -1;
+    z-index: var(--z-fixed);
+
 }
 
 .fotnav {
     width: 100%;
-    height: 5vh;
+    height: 7vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,13 +285,13 @@ p .span {
 }
 
 .fotlink {
-    padding-top: 7px;
+    padding-top: 15px;
     border-left: 1px solid #70707029;
     border-right: none;
     justify-content: center;
     position: relative;
     width: 19%;
-    height: 5vh;
+    height: 7vh;
     text-align: center;
     transition: .3s;
     color: #392C23;
@@ -307,7 +308,7 @@ p .span {
     border-left: 1px solid #3EC4B5;
 }
 
-.fotlink:active {
+.fotlink.active {
     color: #FFFFFF;
     background-position: right;
     border-left: 1px solid #3EC4B5;
